@@ -1,0 +1,11 @@
+table, th, td, tr {
+  border: 1px solid #ccc;
+}
+
+table {
+  width:500px;;
+}
+
+td{
+  text-align: center;
+}

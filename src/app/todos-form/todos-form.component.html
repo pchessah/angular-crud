@@ -1,0 +1,6 @@
+<form class="input-container" [formGroup]="todoForm">
+  <input data-testid="input-form" formControlName="todo" type="text" class="form-control" placeholder="enter to do" />
+  <button (click)="submit()" type="submit" class="btn">Submit</button>
+</form>
+
+

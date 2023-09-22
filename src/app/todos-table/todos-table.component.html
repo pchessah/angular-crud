@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Todo Item</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let todo of _todoService._todos();">
+    <td>{{todo.todo}}</td>
+    <td>{{todo.done ? "Completed" : "Not Completed"}}</td>
+    <td>
+      <input title="todo" (change)="toggleToDo(todo)" type="checkbox" id="todoDone" name="todoDone" [value]="todo.done">
+      <button title="delete" type="button" (click)="delete(todo)">X</button>
+    </td>
+  </tr>
+</table>
